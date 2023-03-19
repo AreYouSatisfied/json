@@ -1,20 +1,58 @@
-{"menu":{
+{"menu:":[
     {
-        "id":2,
-        "nombre":"Hamburguesa",
-        "descripcion":"es una carne y papas",
-        "precio":100,
-        "imagen":"hamburguesa.jpg"
-
+        "Nombre:": "Hamburguesa",
+        "Descripción:": "Doble Carne, Con Tocino, Queso Amarillo, Jalapeño",
+        "Precio:": "100$",
+        "Imagen:": "xd"
     },
+
     {
-        "id":2,
-        "nombre":"Pizza",
-        "descripcion":"Queso,peperoni",
-        "precio":89,
-        "imagen":"pizza.png"
+        "Nombre:": "Enchiladas",
+        "Descripción:": "Tomate, Queso, Masa, Chile",
+        "Precio:": "$65",
+        "Imagen:": "XDDDD"
+    },
 
+    {
+        "Nombre:": "Quesadillas",
+        "Descripción:": " Queso, Frijoles, Jamon, Harina, Masa",
+        "Precio:": "$79",
+        "Imagen:": "xd"
+    },
+
+    {
+        "Nombre:": "Sopes",
+        "Descripción:": "Papa, Frijoles Vallos, Desebrada, Salsa Verde, Carne, Chicharron",
+        "Precio:": "$50",
+        "Imagen:": "xd"
+    },
+
+    {
+        "Nombre:": "Tamales",
+        "Descripción:": "Pollo, Frijoles, Lechuga, Guacamole",
+        "Precio:": "$85",
+        "Imagen:": "xd"
+    },
+
+    {
+        "Nombre:": "Tortas",
+        "Descripción:": "Carne Asada, Lechuga, Cebolla, Frijol",
+        "Precio:": "$55",
+        "Imagen:": "xd"
+    },
+
+    {
+        "Nombre:": "Tacos",
+        "Descripción:": "Masa, Bistec, Pastor, Cebolla, Cilantro",
+        "Precio:": "$90",
+        "Imagen:": "xd"
+    },
+
+    {
+        "Nombre:": "Pizza",
+        "Descripción:": "Pepperoni, Queso, Masa",
+        "Precio:": "$89",
+        "Imagen:": "XDDDD"
     }
-
-}
+]
 }

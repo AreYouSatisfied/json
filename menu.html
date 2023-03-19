@@ -8,12 +8,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <title> Pagina 1 </title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> Menu </title>
 </head>
 <body>
     <div style="margin: 24px;">
-    <nav class="navbar navbar-inverse navbar-stick-static-top">
+        <nav class="navbar navbar-light" style="background-color: rgb(197, 231, 165);">
         <div class="container">
             <a class="navbar-brand" href="index.html">INICIO</a>
             <ul class="nav navbar-nav">
@@ -42,12 +41,12 @@
                 container.classList.add('item');
                 container.innerHTML=
                 
-               ` <h1> ${item.id}</h1>
-                ${item.nombre}
-                ${item.descripcion}
-                <p class="precio"> ${item.precio.toFixed(2)} pesos </p>
-                <img src="${item.imagen" alt="item.nombre">}
-            ` 
+                `<img src="${item.imagen}" alt="${item.nombre}">
+                ${item.nombre}<br>
+                <p>${item.descripcion}</p>
+                <p class="precio">${item.precio.toFixed(2)}pesos</p>
+                `;
+            
             })
         })
     </script>
