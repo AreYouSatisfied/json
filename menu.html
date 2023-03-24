@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <title> Menu </title>
+    <link rel="jsonsheet" type="text/css" href="menu.json">
 </head>
 <body>
     <div style="margin: 24px;">
@@ -35,17 +36,40 @@
         fetch('menu.json')
         .then(response=>response.json())
         .then(data =>{
-            const menu = document.getElementById('menu');
-            data.menu.forEach(item=>{
-                const container = document.createElement('div');
-                container.classList.add('item');
-                container.innerHTML=
-                
-                `<img src="${item.imagen}" alt="${item.nombre}">
-                ${item.nombre}<br>
-                <p>${item.descripcion}</p>
-                <p class="precio">${item.precio.toFixed(2)}pesos</p>
-                `;
+            const tabla = document.getElementById('table');
+            tabla.innerHTML=
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>imagen</th>
+                    <th>Producto</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                    <th>Seleccion</th>
+                </tr>
+                </thead>
+
+                <tbody></tbody> 
+
+            document.getElementById('menu').appendChild(tabla);
+            Object.keys(data).forEach(categoria=>{
+                data (categoria).forEach(producto=>{
+                    const fila=document.createElement('tr');
+                    fila.innerHTML=
+                    <td>${categoria}</td>
+                    <td><img src="${producto.imagen}"alt="${producto.name}"></td>
+
+                    <td>${producto.nombre}</td>
+                    <td>${producto.descripcion}</td>
+                    <td>${producto.precio}</td>
+                    <td><input type="checkbox" class="producto" data-precio="${producto.nombre}"></td>
+                    ;
+                    tabla.querySelector('tbody').appendChild(fila);
+                });
+            });
+
+            const producto = document.querySelectorAll ('.producto');
+
             
             })
         })
