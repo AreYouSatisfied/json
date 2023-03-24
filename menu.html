@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <title> Menu </title>
-    <link rel="jsonsheet" type="text/css" href="menu.json">
 </head>
 <body>
     <div style="margin: 24px;">
@@ -58,7 +57,6 @@
                     fila.innerHTML=
                     <td>${categoria}</td>
                     <td><img src="${producto.imagen}"alt="${producto.name}"></td>
-
                     <td>${producto.nombre}</td>
                     <td>${producto.descripcion}</td>
                     <td>${producto.precio}</td>
@@ -68,11 +66,20 @@
                 });
             });
 
-            const producto = document.querySelectorAll ('.producto');
+            const producto=document.querySelectorAll ('.producto');
+            productos.forEach(producto=>{
+                productos.addEventListener{'change',() => {
+                let suma=0;
+                productos.forEach{producto=>{
+                    if(producto.checked){
+                        suma+= parseFloat{producto.dataset.precio};
+                    }
+                }};
+                document.getElementById('resultado').innerHTML=<h1>TOTAL: $ ${suma.toFixed(2)} </h1>;
 
-            
+                }};
+            });
             })
-        })
     </script>
 </body>
 </html>
