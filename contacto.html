@@ -26,13 +26,16 @@
                 <li>
                     <a href="contacto.html">CONTACTO</a>
                 </li>
+                <li>
+                    <a href="calcufisica.html">FISICA</a>
+                </li>
             </ul>
         </div>
     </nav>
 </div>
-    <nav class="navbar navbar">
-        <div class="jumbotron jumbotron-fluid" >
-            <div class="container">
+    <nav class="navbar navbar" style="background-color: #9ddada;">
+        <div class="jumbotron jumbotron-fluid"style="background-color: #9ddada;" >
+            <div class="container" style="background-color: #a4e0e0;">
               <h1 class="display-4">Fisica</h1>
               <p class="lead">La física es una ciencia que estudia sistemáticamente los fenómenos naturales, tratando de encontrar las leyes básicas que los rigen. Utiliza las matemáticas como su lenguaje y combina estudios teóricos con experimentales para obtener las leyes correctas.</p>
 
@@ -145,11 +148,76 @@
           </script>
 
           <footer>
+            <style>
+                footer{
+                    background-color:rgb(197, 231, 165);
+                    color: #8a244b;
+                    padding: 30px 0;
+                }
+                .container{
+                    max-width: 20px;
+                    margin: auto;
+                    padding: 0 20px;
+
+                }
+                .footer-content{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .footer-section{
+                    width: 100%;
+                    padding: 20px;
+                    box-sizing: border-box;
+                }
+                .about{
+                    text-align: center;
+                }
+                .abouth2{
+                    margin-bottom: 20px;
+                }
+                .about p{
+                    font-size: 18px;
+                    line-height: 1.5px;
+                    margin-bottom: 20px;
+                }
+                .contact-links{
+                    display: flex;
+                    justify-content: center;
+                }
+                .contact-links a{
+                    display: inline-block;
+                    color: #fff;
+                    font-size: 24px;
+                    margin: 0 10px;
+                    transition: all 0.3 ease;
+                    
+transform: translateY(-5px);
+
+                }
+            </style>
+            <div class="container">
+                <div class=".footer-content">
+                    <div class="footer-selection about">
+
            <h2>Contactame</h2>
            <p>Si estas interesado en contactarme, puedes hacerlo a traves de cualquiera de las siguientes redes sociales: </p>
            <a href="http://fasebook.com/miperfil" target="_blank"><i class="fab fa-facebook"></i></a>
            <a href="http://instagram.com/miperfil" target="_blank"><i class="fab fa-instagram"></i></a>
            <a href="http://twitter.com/miperfil" target="_blank"><i class="fab fa-twitter"></i></a>
           </footer>
+        </div>
+    </div>
+</div>
+
+          <script>
+            const redessociales=document.
+            querySelectorAll('.contact-links');
+            redessociales.forEach(link =>{
+                link.addEventListener('click', e=>{
+                    e.preventDefault();
+                    window.open(link.href, '_blank');
+                });
+            });
+          </script>
 </body>
 </html>
